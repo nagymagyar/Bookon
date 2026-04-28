@@ -1,0 +1,54 @@
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card shadow-sm">
+      <div class="card-header bg-primary text-white">
+        <h4 class="card-title mb-0">Könyv regisztrálása</h4>
+      </div>
+      <div class="card-body">
+        <form (ngSubmit)="registerBook()">
+          <div class="mb-3">
+            <label for="title" class="form-label">Könyv címe:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              [(ngModel)]="bookTitle"
+              name="title"
+              required
+              placeholder="Adja meg a könyv címét"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="author" class="form-label">Szerző:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="author"
+              [(ngModel)]="bookAuthor"
+              name="author"
+              required
+              placeholder="Adja meg a szerző nevét"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="price" class="form-label">Ár:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="price"
+              [(ngModel)]="bookPrice"
+              name="price"
+              required
+              placeholder="Adja meg az árat"
+              step="0.01"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Regisztrálás</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.alert {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.alert h4 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
